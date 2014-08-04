@@ -35,6 +35,7 @@
         self.answers = @[@"Mon Mothma",
                          @"Echo Base",
                          @"Trap"];
+       
     }
     
     return self;
