@@ -8,8 +8,17 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-                            
+class QuizViewController: UIViewController {
+    
+    
+    required init(coder: NSCoder) {
+        fatalError("NSCoding not supported")
+    }
+    
+    override init(){
+        super.init(nibName: "QuizViewController", bundle: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +29,13 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func showQuestion(sender: AnyObject) {
+        
+    }
+    
+    @IBAction func showAnswer(sender: AnyObject) {
+        
+    }
 
 }
 
